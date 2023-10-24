@@ -42,9 +42,6 @@ class _InputDialogState extends State<InputDialog> {
               ),
               TextFormField(
                 controller: _textEditingController,
-                validator: (value) {
-                  return null;
-                },
               ),
               Gaps.v16,
               const Text(
@@ -58,6 +55,7 @@ class _InputDialogState extends State<InputDialog> {
               TextFormField(
                 controller: _textEditingController,
                 validator: (value) {
+                  if (value is! int) return "숫자 입력";
                   return null;
                 },
               ),
@@ -73,6 +71,7 @@ class _InputDialogState extends State<InputDialog> {
               TextFormField(
                 controller: _textEditingController,
                 validator: (value) {
+                  if (value is! int) return "숫자 입력";
                   return null;
                 },
               ),
@@ -88,6 +87,7 @@ class _InputDialogState extends State<InputDialog> {
               TextFormField(
                 controller: _textEditingController,
                 validator: (value) {
+                  if (value is! int) return "숫자 입력";
                   return null;
                 },
               ),
