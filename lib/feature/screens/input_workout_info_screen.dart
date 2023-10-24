@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:workout_routine/constants/sizes.dart';
-import 'package:workout_routine/feature/input_screen/widgets/input_dialog.dart';
-import 'package:workout_routine/feature/input_screen/widgets/workout_set.dart';
+import 'package:workout_routine/feature/widgets/input_dialog.dart';
 
-class InputWorkoutInfo extends StatefulWidget {
-  const InputWorkoutInfo({super.key});
+class InputWorkoutInfoScreen extends StatefulWidget {
+  const InputWorkoutInfoScreen({super.key});
 
   @override
-  State<InputWorkoutInfo> createState() => _InputWorkoutInfoState();
+  State<InputWorkoutInfoScreen> createState() => _InputWorkoutInfoState();
 }
 
-class _InputWorkoutInfoState extends State<InputWorkoutInfo> {
+class _InputWorkoutInfoState extends State<InputWorkoutInfoScreen> {
   List<Widget> sets = [];
 
   @override
@@ -45,9 +44,7 @@ class _InputWorkoutInfoState extends State<InputWorkoutInfo> {
             showDialog(
                 context: context,
                 builder: (context) => const InputDialog()).then(
-              (value) => setState(() {
-                sets.add(const WorkoutSet());
-              }),
+              (value) => setState(() {}),
             );
           },
           child: const Icon(

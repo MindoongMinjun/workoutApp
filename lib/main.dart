@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:workout_routine/feature/home_screen/home_screen.dart';
+import 'package:workout_routine/feature/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());

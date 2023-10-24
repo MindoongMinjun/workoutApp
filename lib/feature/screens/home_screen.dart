@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:workout_routine/constants/sizes.dart';
-import 'package:workout_routine/feature/home_screen/widgets/workout.dart';
-import 'package:workout_routine/feature/input_screen/input_workout_info.dart';
+import 'package:workout_routine/feature/screens/input_workout_info_screen.dart';
+import 'package:workout_routine/feature/widgets/workout.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
       context,
       MaterialPageRoute(
         fullscreenDialog: true,
-        builder: (BuildContext context) => const InputWorkoutInfo(),
+        builder: (BuildContext context) => const InputWorkoutInfoScreen(),
       ),
     ).then(
       (value) => setState(() {
